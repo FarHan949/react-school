@@ -1,4 +1,5 @@
 import React from 'react';
+import header from '../../img/header.png'
 import { useLoaderData } from 'react-router-dom';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { faCoffee } from '@fortawesome/free-solid-svg-icons'
@@ -15,6 +16,10 @@ const Home = () => {
             <h1 className='text-4xl text-center text-green-800'>Hello world {data.length}
               {element}
             </h1>
+
+            <div>
+                <HeaderCart></HeaderCart>
+            </div>
               <div className='grid grid-cols-3 gap-5 m-8 p-5'>
 
             {
@@ -28,6 +33,20 @@ const Home = () => {
 };
 
 
+
+const HeaderCart = () =>{
+    return (
+        <div className='flex justify-between bg-cyan-600'>
+             <div className='ml-14'>
+                 <h1>Hello world</h1>
+             </div>
+             <img className='w-96' src={header}></img>
+        </div>
+    )
+}
+
+
+
 const Cart = ({data}) =>{
     return(
        
@@ -38,5 +57,7 @@ const Cart = ({data}) =>{
         </div>
     )
 }
+
+
 
 export default Home;

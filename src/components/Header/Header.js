@@ -1,23 +1,28 @@
 import React from 'react';
 import { Link } from 'react-router-dom';
 
-const Header = () => {
-    return (
-         <div className='bg-cyan-600 pr-20 pl-20 flex justify-between items-center'>
 
+const Header = () => {
+    
+    return (
+         <div className=' pr-20 pl-20 flex justify-between items-center'>
+               
               <div>
-                   <h1 className='text-4xl text-yellow-100'>KinderKind</h1>
+                   <h1 className='text-4xl text-cyan-600 font-mono font-semibold'>KinderKind</h1>
               </div>
 
              <nav className='m-0 p-8 gap-16 flex text-lg justify-center text-white'>
-               <Link to='/home' className=' hover:bg-black p-1 rounded-xl text-yellow-200'>Home</Link>
-               <Link to='/services' className=' hover:bg-black p-1 rounded-xl text-yellow-200'>Services</Link>
-               <Link to='/about' className=' hover:bg-black p-1 rounded-xl text-yellow-200'>About</Link>
-               <Link to='/contact' className=' hover:bg-black p-1 rounded-xl text-yellow-200'>Contact</Link>
+               <Link to='/home' className=' hover:bg-cyan-400 active:bg-cyan-400 p-1 rounded-xl text-black'>Home</Link>
+               <Link to='/services' className=' hover:bg-cyan-400 active:after:bg-cyan-400 p-1 rounded-xl  text-black'>Services</Link>
+               <Link to='/about' className=' hover:bg-cyan-400 active:after:bg-cyan-400 p-1 rounded-xl  text-black'>About</Link>
+               <Link to='/contact' className=' hover:bg-cyan-400 active:after:bg-cyan-400 p-1 rounded-xl  text-black'>Contact</Link>
            </nav>
-
         </div>    
     );
 };
+
+
+
+
 
 export default Header;
