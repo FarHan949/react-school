@@ -33,9 +33,12 @@ const HeaderCart = () =>{
 
     return (
         <div className='flex justify-between bg-cyan-600 h-screen'>
-             <div className='ml-14 mt-20'>
-                 <h3 className='text-white text-xl font-serif m-4'>Kids Learning Center</h3>
-                 <h1 className='text-white text-4xl font-serif font-bold m-2'>New Approach to Kids Education</h1>
+             <div className='ml-14 mt-20 font-sans'>
+                 <h3 className='text-white text-2xl font-bold m-4'>Kids Learning Center</h3>
+                 <h1 className='text-white text-5xl font-bold m-4'>New Approach to Kids Education</h1>
+                 <p className='text-white text-wrap m-4 text-xl'>Sea ipsum kasd eirmod kasd magna, est sea et diam ipsum est amet sed sit. Ipsum dolor no justo
+                     dolor et, lorem ut dolor erat dolore sed ipsum at ipsum nonumy amet. Clita lorem dolore sed stet 
+                     et est justo dolore.</p>
              </div>
              <img className='w-2/5' src={header}></img>
         </div>
