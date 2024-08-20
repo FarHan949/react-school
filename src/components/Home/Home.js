@@ -9,13 +9,8 @@ const Home = () => {
 
     const data = useLoaderData()
 
-    const element = <FontAwesomeIcon icon={faCoffee} ></FontAwesomeIcon>
     return (
         <div>
-            
-            <h1 className='text-4xl text-center text-green-800'>Hello world {data.length}
-              {element}
-            </h1>
 
             <div>
                 <HeaderCart></HeaderCart>
@@ -35,12 +30,14 @@ const Home = () => {
 
 
 const HeaderCart = () =>{
+
     return (
-        <div className='flex justify-between bg-cyan-600'>
-             <div className='ml-14'>
-                 <h1>Hello world</h1>
+        <div className='flex justify-between bg-cyan-600 h-screen'>
+             <div className='ml-14 mt-20'>
+                 <h3 className='text-white text-xl font-serif m-4'>Kids Learning Center</h3>
+                 <h1 className='text-white text-4xl font-serif font-bold m-2'>New Approach to Kids Education</h1>
              </div>
-             <img className='w-96' src={header}></img>
+             <img className='w-2/5' src={header}></img>
         </div>
     )
 }
