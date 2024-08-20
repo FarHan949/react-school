@@ -1,6 +1,6 @@
 import React from 'react';
 import './Header.css'
-import { Link } from 'react-router-dom';
+import { NavLink, Link } from 'react-router-dom';
 import { faRepublican } from '@fortawesome/free-solid-svg-icons';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 
@@ -19,10 +19,10 @@ const Header = () => {
 
              <nav className='m-0 p-8 gap-16 flex text-lg justify-center text-white'>
                 
-               <Link to='/home' className={'hover:bg-cyan-400 active:bg-cyan-400 p-1 rounded-xl text-black'}>Home</Link>
-               <Link to='/classes' className=' hover:bg-cyan-400 active:after:bg-cyan-400 p-1 rounded-xl  text-black'>Classes</Link>
-               <Link to='/about' className=' hover:bg-cyan-400 active:after:bg-cyan-400 p-1 rounded-xl  text-black'>About</Link>
-               <Link to='/contact' className=' hover:bg-cyan-400 active:after:bg-cyan-400 p-1 rounded-xl  text-black'>Contact</Link>
+               <NavLink to='/home' className={({isActive})=>`hover:bg-cyan-400 ${isActive ? "text-cyan-400" : "text-black"} p-1 rounded-xl text-black`}>Home</NavLink>
+               <NavLink to='/classes' className={({isActive})=>` hover:bg-cyan-400 ${isActive ? "text-cyan-400" : "text-black"} p-1 rounded-xl  text-black`}>Classes</NavLink>
+               <NavLink to='/about' className={({isActive})=> ` hover:bg-cyan-400 ${isActive ? "text-cyan-400" : "text-black"}  p-1 rounded-xl  text-black`}>About</NavLink>
+               <NavLink to='/contact' className={({isActive})=> `hover:bg-cyan-400 ${isActive ? "text-cyan-400" : "text-black"} p-1 rounded-xl  text-black`}>Contact</NavLink>
            </nav>
         </div>    
     );
