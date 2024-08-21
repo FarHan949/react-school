@@ -12,7 +12,7 @@ const HeaderCart = () =>{
              <div className='ml-14 mt-20 font-sans'>
                  <h3 className='text-white text-3xl font-bold m-7'>Kids Learning Center</h3>
                  <h1 className='text-white text-5xl font-bold m-7'>New Approach to Kids Education</h1>
-                 <p className='text-white text-wrap m-4 text-xl m-7'>Sea ipsum kasd eirmod kasd magna, est sea et diam ipsum est amet sed sit. Ipsum dolor no justo
+                 <p className='text-white text-wrap text-xl m-7'>Sea ipsum kasd eirmod kasd magna, est sea et diam ipsum est amet sed sit. Ipsum dolor no justo
                      dolor et, lorem ut dolor erat dolore sed ipsum at ipsum nonumy amet. Clita lorem dolore sed stet 
                      et est justo dolore.</p>
              </div>
